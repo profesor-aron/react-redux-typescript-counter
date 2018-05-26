@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-  import { CounterContainer } from './counter/CounterContainer'
-  import { counterReduce } from './counter/CounterReducers'
+import { CounterContainer } from './counter/CounterContainer'
+import { counterReduce } from './counter/CounterReducers'
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
 }
 
 const store = createStore(
-     counterReduce
+  counterReduce
 )
 
 ReactDOM.render(
