@@ -5,8 +5,8 @@ import { INumContainer } from './CounterInterfaces'
 export const Counter = ({ count, onIncrementClick, onDecrementClick }: INumContainer) => {
   return (
     <div>
-      <button 
-        onClick={e => {
+      <button
+        onClick={(e) => {
           e.preventDefault()
           onIncrementClick(1)
         }}
@@ -14,8 +14,8 @@ export const Counter = ({ count, onIncrementClick, onDecrementClick }: INumConta
         +
       </button>
       {count}
-      <button 
-        onClick={e => {
+      <button
+        onClick={(e) => {
           e.preventDefault()
           onDecrementClick(1)
         }}

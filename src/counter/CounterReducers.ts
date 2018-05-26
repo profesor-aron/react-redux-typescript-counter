@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 
 import {
-  INCREMENT,
-  DECREMENT
+  DECREMENT,
+  INCREMENT
 } from './CounterActions'​​
 
 import {
@@ -14,7 +14,7 @@ const initialState = {
   count: 0
 }
 
-export function counterReduce (state: INumState = initialState, action: INumAction) {
+export function counterReduce(state: INumState = initialState, action: INumAction) {
   switch (action.type) {
     case INCREMENT:
       return {

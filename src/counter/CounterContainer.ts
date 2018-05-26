@@ -1,17 +1,17 @@
 import React from 'react'
-import { Dispatch } from 'redux'
 import { connect } from 'react-redux'
+import { Dispatch } from 'redux'
 
 import { Counter } from './CounterPresentational'
 
 import {
-  increment,
-  decrement
+  decrement,
+  increment
 } from './CounterActions'​​
 
 import {
-  INumState,
-  INumContainer
+  INumContainer,
+  INumState
 } from './CounterInterfaces'
 
 const mapStateToProps = (state: INumState) => {
@@ -22,11 +22,11 @@ const mapStateToProps = (state: INumState) => {
 
 const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
-    onIncrementClick: (value: number) => {
-      dispatch(increment(value))
-    },
     onDecrementClick: (value: number) => {
       dispatch(decrement(value))
+    },
+    onIncrementClick: (value: number) => {
+      dispatch(increment(value))
     }
   }
 }

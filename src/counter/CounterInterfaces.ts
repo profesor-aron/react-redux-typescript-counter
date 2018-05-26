@@ -16,7 +16,7 @@ export interface INumState {
 }
 
 export interface INumProps {
-  onIncrementClick (value: number): void
+  onIncrementClick(value: number): void
   onDecrementClick(value: number): void
 }
 
