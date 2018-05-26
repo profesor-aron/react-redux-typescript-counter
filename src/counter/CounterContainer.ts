@@ -5,16 +5,17 @@ import { Dispatch } from 'redux'
 import { Counter } from './CounterPresentational'
 
 import {
-  decrement,
-  increment
+  
+  increment,
+     decrement
 } from './CounterActions'​​
 
-import {
+  import {
   INumContainer,
   INumState
 } from './CounterInterfaces'
 
-const mapStateToProps = (state: INumState) => {
+  const mapStateToProps = (state: INumState) => {
   return {
     count: state.count
   }
