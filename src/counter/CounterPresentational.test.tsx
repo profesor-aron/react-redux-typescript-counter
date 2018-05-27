@@ -1,10 +1,10 @@
-import { shallow } from 'enzyme'
+import { shallow, ShallowWrapper } from 'enzyme'
 import React from 'react'
 
 import { Counter } from './CounterPresentational'
 
 describe('CounterPresentational', () => {
-  let wrapper: any
+  let wrapper: ShallowWrapper
 
   const count = 10
   const mockIncrementfn = jest.fn()
