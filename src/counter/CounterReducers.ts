@@ -3,7 +3,7 @@ import { combineReducers } from 'redux'
 import {
   DECREMENT,
   INCREMENT
-} from './CounterActions'​​
+} from './CounterActionTypes'​​
 
 import {
   INumAction,

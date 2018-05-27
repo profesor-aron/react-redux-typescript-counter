@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ],
     "jsx": "react",
-    "lib": ["es2015", "dom"],
     "module": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -14,6 +17,6 @@
     "./src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "**/*.test.*"
   ]
 }

@@ -6,6 +6,7 @@
   "rules": {
     "semicolon": [true, "never"],
     "quotemark": [true, "single"],
-    "trailing-comma": false
+    "trailing-comma": false,
+    "no-implicit-dependencies": [true, "dev"]
   }
 }
