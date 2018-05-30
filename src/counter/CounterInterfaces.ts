@@ -12,12 +12,12 @@ export interface INumAction {
  */
 
 export interface INumState {
-  count: number
+  count?: number
 }
 
 export interface INumProps {
-  onIncrementClick(value: number): void
-  onDecrementClick(value: number): void
+  onIncrementClick?: (value: number) => void
+  onDecrementClick?: (value: number) => void
 }
 
 /*
