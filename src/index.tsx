@@ -12,9 +12,7 @@ const App = () => {
   )
 }
 
-const store = createStore(
-  counterReduce
-)
+const store = createStore(counterReduce)
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,20 +1,18 @@
 import { connect } from 'react-redux'
 
 import { Counter } from './CounterPresentational'
+import { getCount } from './CounterSelectors'
 
 import {
   decrement,
   increment
 } from './CounterActions'
 
-import {
-  INumContainer,
-  INumState
-} from './CounterInterfaces'
+import { ICounterState } from './CounterInterfaces'
 
 export const CounterContainer = connect(
-  (state: INumState) => ({
-    count: state.count
+  (state: ICounterState) => ({
+    count: getCount(state)
   }),
   {
     onDecrementClick: decrement,

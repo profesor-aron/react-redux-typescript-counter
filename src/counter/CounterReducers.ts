@@ -6,15 +6,15 @@ import {
 } from './CounterActionTypes'​​
 
 import {
-  INumAction,
-  INumState
+  ICounterAction,
+  ICounterState
 } from './CounterInterfaces'
 
 const initialState = {
   count: 0
 }
 
-export function counterReduce(state: INumState = initialState, action: INumAction) {
+export function counterReduce(state: ICounterState = initialState, action: ICounterAction) {
   switch (action.type) {
     case INCREMENT:
       return {

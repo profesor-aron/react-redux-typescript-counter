@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { INumContainer } from './CounterInterfaces'
+import { ICounterContainer } from './CounterInterfaces'
 
-export const Counter = ({ count, onIncrementClick, onDecrementClick }: INumContainer) => (
+export const Counter = ({ count, onIncrementClick, onDecrementClick }: ICounterContainer) => (
   <div>
     <button
       id='increment'

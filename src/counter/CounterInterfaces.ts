@@ -2,7 +2,7 @@
  * interface actions
  */
 
-export interface INumAction {
+export interface ICounterAction {
   type: string
   value: number
 }
@@ -11,11 +11,11 @@ export interface INumAction {
  * interface reducers
  */
 
-export interface INumState {
+export interface ICounterState {
   count?: number
 }
 
-export interface INumProps {
+export interface ICounterProps {
   onIncrementClick?: (value: number) => void
   onDecrementClick?: (value: number) => void
 }
@@ -24,5 +24,5 @@ export interface INumProps {
  * interface presentational
  */
 
-export interface INumContainer extends INumState, INumProps {
+export interface ICounterContainer extends ICounterState, ICounterProps {
 }
