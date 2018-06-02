@@ -17,9 +17,14 @@ module.exports = {
         use: {
           loader: "awesome-typescript-loader"
         }
+      },
+      {
+        test: /\.tsx?$/,
+        use: {
+          loader: "tslint-loader"
+        }
       }
     ]
   },
   plugins: [htmlPlugin]
 }
-// tslint-loader
