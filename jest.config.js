@@ -14,10 +14,15 @@ module.exports = {
     "json",
     "node"
   ],
+  "setupTestFrameworkScriptFile": "<rootDir>/src/config/test/setupEnzyme.ts",
+  "collectCoverage": true,
   "collectCoverageFrom": [
     "src/**/*.{ts,tsx}",
     "!src/config/test/setupEnzyme.ts",
     "!src/index.tsx"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/src/config/test/setupEnzyme.ts"
+  "coverageDirectory": "coverage",
+  "coverageReporters": [
+    "html"
+  ]
 }
