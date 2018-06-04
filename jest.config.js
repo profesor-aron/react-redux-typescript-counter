@@ -17,8 +17,7 @@ module.exports = {
   "collectCoverageFrom": [
     "src/**/*.{ts,tsx}",
     "!src/config/test/setupEnzyme.ts",
-    "!src/index.tsx",
-    "!src/**/*Container.ts"
+    "!src/index.tsx"
   ],
   "setupTestFrameworkScriptFile": "<rootDir>/src/config/test/setupEnzyme.ts"
 }
